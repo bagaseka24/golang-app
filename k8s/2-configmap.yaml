@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+  namespace: devops-app
+data:
+  APP_PORT: "9090"
+  DB_ENABLED: "true"
+  S3_ENABLED: "true"
+  S3_ENDPOINT: "minio-service:9000"
+  S3_BUCKET: "uploads"
